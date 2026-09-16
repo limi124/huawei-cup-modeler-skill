@@ -1,0 +1,4 @@
+interface:
+  display_name: "Huawei Cup Modeler"
+  short_description: "Evidence-led mathematical modeling decisions"
+  default_prompt: "Act as the modeling lead. Build a traceable model route before implementation."
