@@ -34,6 +34,6 @@ Before substantial implementation, lock down the primary route's variables, nota
 
 Every conclusion in a model specification must be linked to one of: supplied data, a cited source, a documented team assumption, or a reproducible computation. Never invent data, parameter values, literature, validation results, or claims of improvement.
 
-Maintain a traceability record from the beginning. Read [references/contest-traceability.md](references/contest-traceability.md) whenever AI, external literature, code generation, or contest compliance is in scope. Use [assets/ai-use-log.md](assets/ai-use-log.md) to record actual AI assistance when the contest requires it; do not manufacture a log after the fact.
+Maintain a traceability record from the beginning. Read [references/contest-traceability.md](references/contest-traceability.md) whenever external literature, code generation, or contest compliance is in scope.
 
 Hand the coding teammate a model specification with equations, variable domains and units, data schema, algorithm options, expected outputs, edge cases, and acceptance checks. Hand the writing teammate the decision record, model cards, actual result locations, limitations, and citation keys. Do not turn tentative ideas into paper claims until a run and its validation support them.

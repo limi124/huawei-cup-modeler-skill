@@ -8,11 +8,10 @@ Maintain records as work happens:
 
 - a source table with citation key, DOI or authoritative URL, access date, and the specific claim or formula supported;
 - model cards and the final method-decision record;
-- code commit or file version, input-data fingerprint, configuration, run command, and result location;
-- an AI-use log only for tools and interactions that actually influenced the work.
+- code commit or file version, input-data fingerprint, configuration, run command, and result location.
 
-When official rules require AI disclosure, name the tool and version, explain the limited use, retain material prompts and outputs when required, and record the team's review or modification. Follow the current official wording and format rather than assuming that a prior year's rule applies.
+When official rules require AI disclosure, follow their current wording and format rather than assuming that a prior year's rule applies.
 
 ## Red lines
 
-Do not fabricate sources, data, experiments, derivations, or AI-use records. Do not represent an AI suggestion as a verified finding. Do not copy prose, figures, tables, or equations from a source without citation and a legitimate reason to reuse it. If a requirement cannot be verified, flag it for the team instead of guessing.
+Do not fabricate sources, data, experiments, or derivations. Do not represent an AI suggestion as a verified finding. Do not copy prose, figures, tables, or equations from a source without citation and a legitimate reason to reuse it. If a requirement cannot be verified, flag it for the team instead of guessing.
