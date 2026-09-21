@@ -1,21 +1,21 @@
-# Modeling-lead precheck — <subproblem>
+# 建模手交付前检查：<子问题>
 
-| Dimension | Evidence reviewed | Status: pass / revise / blocked | Repair action |
+| 检查维度 | 已审查证据 | 状态：通过/修改/阻塞 | 修复动作 |
 | --- | --- | --- | --- |
-| Assumptions are necessary and testable |  |  |  |
-| Applicable domain-standard model was identified and assumption-checked |  |  |  |
-| Data treatments answer diagnosed problems and prevent leakage |  |  |  |
-| Baseline and enhancement have a task-specific rationale |  |  |  |
-| Novelty is concentrated in one central and at most one supporting claim |  |  |  |
-| Equations, domains, units, and constraints are complete |  |  |  |
-| Validation can support the intended claim |  |  |  |
-| Subproblem outputs form justified downstream interfaces |  |  |  |
-| Every main subproblem has one or two traceable abstract-ready numbers |  |  |  |
-| Results can be traced to reproducible outputs |  |  |  |
-| Handoff is readable by coding and writing teammates |  |  |  |
+| 假设确有必要且能够检验 |  |  |  |
+| 已识别适用的领域标准模型并审查其假设 |  |  |  |
+| 数据处理针对已发现的问题，且防止数据泄漏 |  |  |  |
+| 基线与改进都有针对本题的理由 |  |  |  |
+| 创新集中在一个核心主张和至多一个辅助主张 |  |  |  |
+| 方程、取值域、单位和约束完整 |  |  |  |
+| 验证足以支撑预定主张 |  |  |  |
+| 子问题输出形成合理的下游接口 |  |  |  |
+| 每个主要子问题都有一至两个可追溯、可写入摘要的数值 |  |  |  |
+| 所有结果都能追溯到可复现输出 |  |  |  |
+| 编程手和论文手能够直接理解交接材料 |  |  |  |
 
-## Handoff decision
+## 交接决定
 
-- Ready for: `coding` / `revision` / `alternative route`
-- Blocking issue:
-- Human reviewer and date:
+- 下一步：`进入编码` / `修改模型` / `更换路线`
+- 阻塞问题：
+- 审查人及日期：

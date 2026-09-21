@@ -1,36 +1,36 @@
-# Model card — <candidate name>
+# 模型卡：<候选模型名称>
 
-## Source and purpose
+## 来源与用途
 
-- Citation key / DOI / authoritative URL:
-- What task does the source solve?
-- Why this candidate is relevant to the current subproblem:
-- Domain role: `accepted backbone` / `empirical standard` / `benchmark` / `recent alternative`
+- 引用键、DOI 或权威网址：
+- 原始文献解决什么任务：
+- 该模型为什么与当前子问题有关：
+- 在本领域中的地位：`公认骨架` / `经验标准` / `基准模型` / `近期替代方案`
 
-## Mathematical mapping
+## 数学映射
 
-- Source target, variables, objective, and constraints:
-- Current-task equivalents:
-- Applicability verdict and evidence:
-- Assumptions retained:
-- Assumptions changed or rejected, with reasons:
-- Role if assumptions only partly hold: `adapted backbone` / `professional baseline` / `rejected`
+- 原方法的目标、变量、目标函数和约束：
+- 在本题中的对应关系：
+- 适用性结论及证据：
+- 保留的假设：
+- 修改或拒绝的假设及理由：
+- 若仅部分适用，其角色为：`改造后的骨架` / `专业基线` / `不采用`
 
-## Feasibility
+## 可行性
 
-- Required data and availability:
-- Required parameters and estimation plan:
-- Computational needs and time risk:
-- Interpretable baseline for comparison:
+- 所需数据及可获得性：
+- 所需参数及估计方案：
+- 计算资源与时间风险：
+- 用于比较的可解释基线：
 
-## Verification plan
+## 验证方案
 
-- Metric or invariant:
-- Comparison or sensitivity test:
-- Known failure modes:
+- 指标或不变量：
+- 对比或灵敏度检验：
+- 已知失效情形：
 
-## Decision
+## 决策
 
-- Status: `candidate` / `selected` / `fallback` / `rejected`
-- Human decision and rationale:
-- Evidence needed before a paper claim can be made:
+- 状态：`候选` / `已选` / `备选` / `淘汰`
+- 人工决策及理由：
+- 写入论文结论前仍需取得的证据：

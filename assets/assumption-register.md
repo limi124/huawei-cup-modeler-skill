@@ -1,11 +1,11 @@
-# Assumption register — <subproblem>
+# 模型假设登记表：<子问题>
 
-| ID | Assumption | Type: fact / approximation / closure | Why it is needed | Likely bias or failure | Test, relaxation, or limitation |
+| 编号 | 假设 | 类型：题设事实/简化近似/闭合假设 | 为什么需要 | 可能造成的偏差或失效 | 检验、放宽方式或局限说明 |
 | --- | --- | --- | --- | --- | --- |
 | A1 |  |  |  |  |  |
 
-## Consistency check
+## 一致性检查
 
-- Assumptions that interact or conflict:
-- Assumptions that must appear in the paper:
-- Assumptions deferred for sensitivity analysis:
+- 存在相互影响或冲突的假设：
+- 必须写入论文正文的假设：
+- 留待灵敏度分析检验的假设：

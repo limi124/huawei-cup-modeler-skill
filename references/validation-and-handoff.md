@@ -1,46 +1,46 @@
-# Validation and handoff
+# 验证与团队交接
 
-## Minimum route comparison
+## 最低限度的路线比较
 
-Start with the applicable domain-standard model when one exists and its assumptions are defensible. Otherwise use the simplest model that represents the stated mechanism or decision. Add complexity only when it addresses an observed limitation and can be checked. Compare candidates on the same input split, constraints, and metric whenever comparison is meaningful.
+如果存在适用的领域标准模型，且其假设站得住，就从它开始。否则，选择能够表达题目机理或决策结构的最简单模型。只有发现具体不足且能够验证改进时，才增加复杂度。在比较确有意义的前提下，候选模型必须使用相同的数据划分、约束和指标。
 
-Use validation appropriate to the task:
+验证方式要与题型匹配：
 
-- prediction: a time-aware holdout or cross-validation, error distribution, and failure cases;
-- optimization: feasibility, baseline objective value, constraint activity, and perturbation of key inputs;
-- evaluation: weight sensitivity, ranking stability, and indicator redundancy;
-- mechanism or simulation: units, boundary conditions, limiting cases, calibration, and scenario sensitivity.
+- 预测问题：考虑时间顺序的留出集或交叉验证、误差分布和失败样本；
+- 优化问题：可行性、基线目标函数值、约束活跃情况和关键输入扰动；
+- 评价问题：权重灵敏度、排序稳定性和指标冗余；
+- 机理或仿真问题：单位、边界条件、极限情形、参数标定和情景敏感性。
 
-Do not force an accuracy contest where it is not meaningful. A parameter conversion, deterministic preprocessing step, or exact derivation may need a correctness and impact check rather than a second model. Do not report a robustness result that has not been computed. If validation is impossible, disclose the reason and narrow the claim.
+没有意义时，不要强行组织“精度竞赛”。参数换算、确定性预处理或精确推导，可能只需要正确性和影响检查，而不是再找一个模型陪跑。没有实际计算过，就不能报告鲁棒性结果。如果客观上无法验证，应说明原因并收窄论文主张。
 
-## Data treatment is part of the model
+## 数据处理是模型的一部分
 
-For every material treatment, record:
+每项会影响结果的数据处理都要记录：
 
-- the observed problem: missingness, imbalance, time or spatial misalignment, noise, outliers, inconsistent units, sampling bias, or domain shift;
-- how it would bias, destabilize, or invalidate the downstream model;
-- the treatment and the basis for its parameters or thresholds;
-- leakage controls, especially fitting transformations and resampling only on training data;
-- before/after evidence such as distribution, signal-to-noise ratio, class recall, synchronization error, retained sample count, or downstream validation change.
+- 观察到的问题，例如缺失、类别不平衡、时间或空间错位、噪声、异常值、单位不一致、抽样偏差或领域漂移；
+- 该问题会怎样让下游模型产生偏差、不稳定或失效；
+- 处理方法，以及参数或阈值的依据；
+- 防止数据泄漏的措施，尤其是只在训练集上拟合变换和重采样；
+- 处理前后证据，例如数据分布、信噪比、分类召回率、同步误差、保留样本量或下游验证结果变化。
 
-Do not apply a stock preprocessing chain without diagnosis. Do not delete data because it harms a desired conclusion. Preserve the raw data and make every exclusion reproducible.
+没有诊断，就不要套固定的预处理流水线。不能因为某些数据不利于预期结论就将其删除。原始数据必须保留，每次剔除都要能复现。
 
-## Model specification for the coding teammate
+## 交给编程手的模型说明
 
-Provide one coherent specification, not an algorithm name:
+交付的是一份完整说明，不是一个算法名称。至少包括：
 
-- inputs, units, data transformations, and treatment of missing or invalid values;
-- symbols, domains, objective, constraints, and any normalization;
-- parameter-estimation, initialization, and stopping rules;
-- solver or algorithm alternatives and the condition that selects each one;
-- expected result tables and figures, plus invariant or acceptance checks;
-- diagnostics and before/after outputs for every material data treatment;
-- deterministic run command, inputs, and random-seed policy when randomness exists.
+- 输入、单位、数据变换，以及缺失值或无效值处理；
+- 符号、取值域、目标函数、约束和归一化方式；
+- 参数估计、初始化和停止规则；
+- 求解器或算法备选，以及启用各方案的条件；
+- 预期结果表图、不变量和验收检查；
+- 每项重要数据处理的诊断与处理前后输出；
+- 确定的运行命令、输入，以及涉及随机性时的随机种子规则。
 
-When code reveals an infeasible assumption, a missing quantity, or a mismatch with the equations, return to the model specification. Do not patch the code and leave the model document stale.
+如果编码过程中发现假设不可行、关键量缺失，或代码与方程不一致，要返回模型说明修改。不能只在代码里临时打补丁，却让模型文档停留在旧版本。
 
-## Handoff to the writing teammate
+## 交给论文手的材料
 
-Give the writer the approved equations and derivation notes, solution architecture, model cards and citation keys, actual result-file paths, figure intent, validation results, result ledger, and limitations. Label unverified ideas as drafts. Every reported number must point to a reproducible output, not a conversation or a manually copied value.
+向论文手交付已确认的方程和推导笔记、整体建模架构、模型卡和引用键、真实结果文件路径、图表意图、验证结果、量化结果台账及局限。未经验证的想法必须标为草案。论文中的每个数值都应指向可复现输出，不能只来自聊天记录或手工抄写。
 
-For every main subproblem, select one or two decisive numbers for the abstract. Use the evidence appropriate to the task: agreement error for a mechanism model, holdout performance for prediction, objective improvement plus feasibility or runtime for optimization, or rank plus sensitivity stability for evaluation. Include an improvement number only when a matched baseline exists. The abstract should communicate evidence, not dump every metric.
+每个主要子问题为摘要挑选一至两个决定性数值。机理模型报告吻合误差；预测模型报告留出集表现；优化模型报告目标函数改善，以及可行性或耗时；评价模型报告关键排序和灵敏度稳定性。只有存在匹配基线时，才能写提升幅度。摘要需要传递证据，不是罗列全部指标。

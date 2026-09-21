@@ -1,28 +1,28 @@
-# Literature to model
+# 从文献走到模型
 
-## What to search for
+## 应该搜什么
 
-Search first for the field's accepted backbone: governing equations, empirical laws, canonical mechanism models, official engineering methods, and widely used benchmarks. Then search from the problem's mechanism and mathematical structure, not from a contest-title phrase. Combine the object or mechanism with the target and the decisive constraint. Examples include `WLAN contention + Bianchi hidden terminal extension`, `magnetic core loss + temperature-corrected Steinmetz`, or `uncertain demand + multi-objective routing + robust optimization`.
+先查本领域公认的骨架，包括控制方程、经验定律、经典机理模型、正式工程方法和常用基准。随后再从题目的作用机理和数学结构出发检索，不要只搜索竞赛题目的完整标题。检索式应组合研究对象或机理、目标和决定性约束，例如 `WLAN 竞争接入 + Bianchi 隐藏终端扩展`、`磁芯损耗 + 温度修正 Steinmetz`，或 `不确定需求 + 多目标路径规划 + 鲁棒优化`。
 
-The aim is not to decorate the paper with a famous model. Determine whether a domain-standard model supplies meaningful variables, parameters, constraints, and an interpretable baseline for the current task. If its assumptions fail, document the failure and decide whether to adapt it, retain it only as a benchmark, or reject it.
+查找领域模型不是为了给论文装点一个知名名称。真正要判断的是：它能否为本题提供有专业含义的变量、参数、约束和可解释基线。如果其假设不成立，应记录具体失效点，再决定是改造后使用、只保留为基准，还是彻底放弃。
 
-Collect only the sources needed to make a decision. For a serious candidate, an efficient set is usually one source establishing the method, one recent application with a similar structure, and one source that supports validation or a required domain assumption. A large bibliography is not evidence by itself.
+只收集足以支持决策的文献。对于一个重要候选模型，通常需要三类来源：一篇奠定该方法的原始文献、一篇结构相近的近期应用，以及一篇支撑验证方法或关键领域假设的文献。参考文献数量多，本身不等于证据充分。
 
-## Evaluate a candidate before adopting it
+## 采用前先评估
 
-For each candidate, record its source, mapping, requirements, and limits in a model card. Assess these in order:
+每个候选模型都要在模型卡中记录来源、映射关系、使用条件和局限，并按以下顺序审查：
 
-1. **Domain standing and role** — Is it an accepted backbone, an empirical standard, a benchmark, or merely one recent application? What professional meaning would it add?
-2. **Structural fit** — Do the paper's target, variables, constraints, and time or spatial scales map to the task?
-3. **Assumption fit** — Are its independence, stationarity, linearity, equilibrium, or observability assumptions defensible here?
-4. **Data and computation fit** — Can the team obtain every needed input and run the method within the time budget?
-5. **Evidence fit** — Can the proposed output be checked with a holdout, benchmark, physical constraint, counterfactual, sensitivity test, or comparison?
-6. **Communication fit** — Can the team derive the essential equations and explain what each result means?
+1. **领域地位与角色**：它是公认骨架、经验标准、常用基准，还是仅见于一篇近期应用？它能给本题增加什么专业含义？
+2. **结构匹配度**：文献中的目标、变量、约束及时间或空间尺度，能否对应到本题？
+3. **假设匹配度**：独立性、平稳性、线性、均衡或可观测性等假设，在本题中是否站得住？
+4. **数据与计算匹配度**：团队能否取得全部输入，并在时间预算内完成计算？
+5. **证据匹配度**：模型输出能否通过留出集、基准、物理约束、反事实、灵敏度检验或对比得到验证？
+6. **表达匹配度**：团队能否推导核心方程，并解释每项结果的实际含义？
 
-SCI Q1/Q2 status may help identify established research venues, but it cannot compensate for poor structural fit or an inaccessible method. Do not treat it as a quality certificate for a particular use.
+SCI 一区或二区可以帮助识别成熟研究来源，但无法弥补模型结构不匹配、数据不可得或方法无法复现的问题。期刊分区不能替代对具体方法的适用性判断。
 
-## Adapt honestly
+## 如实说明借鉴与改动
 
-Separate the source method from the team's adaptation. State which mechanism, equation, loss term, constraint, or validation idea comes from the source; then state what is changed to meet the problem. Novelty can arise from a justified new constraint, coupling, objective, calibration strategy, or validation design. It is not created by renaming a known algorithm or stacking unrelated methods.
+必须把来源方法与本队改动分开写清楚。先说明哪些机理、方程、损失项、约束或验证思路来自文献，再说明为了适配本题具体改了什么。合理的新约束、新耦合关系、新目标函数、新标定策略或新验证设计都可能形成创新；给已有算法换名，或堆叠不相关的方法，不算创新。
 
-When a source is unavailable, rely on its DOI, publisher page, preprint, or another primary version. Do not cite snippets, an AI summary, or a reference that has not been read sufficiently to support the claimed use.
+如果无法取得某个版本，应寻找 DOI、出版社页面、预印本或其他一手版本。不得引用搜索片段、AI 摘要，或尚未读到足以支撑当前主张的文献。

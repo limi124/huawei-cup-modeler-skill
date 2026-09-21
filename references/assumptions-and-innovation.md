@@ -1,24 +1,24 @@
-# Assumptions and innovation
+# 模型假设与创新点
 
-## Assumptions are model components
+## 假设本身就是模型的一部分
 
-For each material assumption, identify whether it is a fact from the problem, a simplifying approximation, or a decision made to close an unobserved quantity. State why it is needed, what direction of bias it may introduce, and one way to test, relax, or disclose it. Do not present convenience assumptions as facts.
+对每项会实质影响结果的假设，都要说明它属于题设事实、简化近似，还是为未观测量作出的闭合处理。同时写清为什么需要它、它可能让结果向哪个方向偏移，以及如何检验、放宽或如实披露。不能把为了方便计算作出的假设写成客观事实。
 
-Keep the assumption set minimal. An assumption is useful only when it makes a specific equation, constraint, estimation step, or interpretation possible.
+假设应当尽量少。只有当一项假设能支撑某个具体方程、约束、估计步骤或结果解释时，它才有保留价值。
 
-## Build a defensible innovation claim
+## 提出经得起检验的创新点
 
-Start with a baseline that the team can explain. Then describe:
+先选一个团队能够讲清楚的基线，再依次说明：
 
-- the observed or logically demonstrated shortcoming of that baseline for this task;
-- the smallest new mechanism, objective term, constraint, coupling, calibration rule, or decision layer that addresses it;
-- why that change should affect the relevant output;
-- the comparison, ablation, sensitivity test, or limiting case that could disprove the improvement.
+- 基线在本题中已经观察到或能够从逻辑上推出的具体不足；
+- 为解决该不足而增加的最小改动，例如新机理、目标项、约束、耦合关系、标定规则或决策层；
+- 这项改动为什么会影响目标输出；
+- 哪种对比、消融、灵敏度检验或极限情形能够推翻改进主张。
 
-Prefer a narrow, evidenced adaptation to a long list of unrelated methods. A candidate is not innovative merely because it is complex, uses a new algorithm name, or combines multiple common methods. If the enhancement cannot be distinguished from the baseline in a test, frame it as an exploratory alternative rather than the contribution.
+有证据支撑的窄改进，通常比一长串互不相关的方法更有说服力。模型更复杂、算法名字更新，或把多个常见方法叠在一起，都不能自动构成创新。如果实验无法区分改进模型与基线，就应把它写成探索性备选，而不是论文贡献。
 
-Budget novelty across the whole paper. Prefer one central contribution that carries the solution and, when justified, one supporting contribution that improves robustness, real-time use, transfer, or interpretability. Routine subproblems may use standard methods. Do not create independent novelty claims merely to make every subproblem look innovative.
+创新点要从全文统筹。优先打造一个贯穿解题主线的核心贡献；确有必要时，再加一个用于增强鲁棒性、实时性、迁移能力或可解释性的辅助贡献。常规子问题可以直接使用成熟方法，不要为了让每一问都显得新颖而生造彼此独立的创新点。
 
-## Write the claim at the right strength
+## 控制论文主张的强度
 
-Use "we introduce" only for the team's documented task-specific construction. Use "we adapt" for a sourced method whose inputs, constraints, or calibration are changed. Use "we compare" when no superiority result exists yet. The paper must not claim improved accuracy, robustness, or applicability until the planned evidence is available.
+只有团队确实针对本题提出并记录了新的构造，才能写“本文提出”。如果是在已有方法上修改输入、约束或标定方式，应写“本文改进”或“本文调整”。尚未得到优势证据时，只能写“本文比较”。在完成预定验证之前，不得声称精度、鲁棒性或适用范围有所提高。

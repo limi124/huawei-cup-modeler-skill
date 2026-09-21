@@ -1,20 +1,20 @@
-# Innovation claim — <subproblem>
+# 创新点论证：<子问题>
 
-## Baseline and limitation
+## 基线及其不足
 
-- Transparent baseline:
-- Concrete limitation for this task:
-- Evidence of the limitation or reason it should occur:
+- 可解释的基线模型：
+- 基线在本题中的具体不足：
+- 证明该不足存在的证据或理论依据：
 
-## Task-specific adaptation
+## 针对本题的改进
 
-- New mechanism, constraint, objective term, coupling, calibration rule, or decision layer:
-- Why it addresses the stated limitation:
-- Source method, if adapted, and what the team changed:
+- 新增的机理、约束、目标项、耦合关系、标定规则或决策层：
+- 它为什么能解决上述不足：
+- 若改自已有方法，注明来源及本队实际改动：
 
-## Testable claim
+## 可检验的主张
 
-- Expected effect and metric or invariant:
-- Baseline comparison, ablation, sensitivity test, or limiting case:
-- What result would weaken or reject this claim:
-- Claim status: `hypothesis` / `supported` / `rejected`
+- 预期效果及对应指标或不变量：
+- 基线对比、消融实验、灵敏度检验或极限情形：
+- 哪种结果会削弱或推翻该主张：
+- 当前状态：`待验证` / `已有证据支持` / `已被否定`

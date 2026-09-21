@@ -1,21 +1,21 @@
-# Model derivation record — <subproblem>
+# 模型推导记录：<子问题>
 
-## Starting point
+## 推导起点
 
-- Problem evidence and supplied quantities:
-- Assumptions used (link to register IDs):
-- Symbols, domains, units, and time or spatial indices:
+- 题目证据及已知量：
+- 使用的假设（关联假设登记表编号）：
+- 符号、取值域、单位及时间或空间下标：
 
-## Derivation
+## 推导过程
 
-| Step | Principle, cited method, or transformation | Equation / constraint | Consequence or interpretation |
+| 步骤 | 原理、引用方法或变换 | 方程或约束 | 推论或解释 |
 | --- | --- | --- | --- |
 | 1 |  |  |  |
 
-## Computational contract
+## 计算约定
 
-- Objective and constraints to implement:
-- Parameters and estimation or calibration method:
-- Algorithm and its reason for use:
-- Invariants, boundary cases, or unit checks:
-- Expected outputs and validation tests:
+- 需要实现的目标函数和约束：
+- 参数及其估计或标定方法：
+- 求解算法及选用理由：
+- 不变量、边界情形或单位检查：
+- 预期输出及验证检验：

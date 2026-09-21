@@ -1,17 +1,17 @@
-# Quantitative result ledger
+# 量化结果台账
 
-Record only verified numbers linked to reproducible outputs. Prefer one or two decisive values per main subproblem over a long list of weak statistics.
+只记录经过验证、能够追溯到可复现输出的数值。每个主要子问题保留一至两个有判别力的结果，不要堆砌说服力有限的统计量。
 
-| Subproblem | Method and claim | Decisive result | Baseline or previous version | Absolute / relative change | Uncertainty, stability, feasibility, or runtime evidence | Reproducible output path | Eligible for abstract? |
+| 子问题 | 方法及主张 | 决定性结果 | 基线或改进前版本 | 绝对/相对变化 | 不确定性、稳定性、可行性或耗时证据 | 可复现输出路径 | 能否写入摘要 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Q1 |  |  |  |  |  |  | `yes` / `no` |
+| 问题一 |  |  |  |  |  |  | `可以` / `不可以` |
 
-## Abstract handoff
+## 摘要交接
 
-For each main subproblem, write one compact sentence containing:
+每个主要子问题用一句紧凑的话交代：
 
-- the selected method or adaptation;
-- the decisive quantitative result;
-- the comparison, agreement error, feasibility, or stability evidence that makes the number meaningful.
+- 最终采用的方法或改进；
+- 决定性量化结果；
+- 让该数值有意义的对比、吻合误差、可行性或稳定性证据。
 
-Do not claim improvement when no matched baseline exists. Do not report training-only performance as the final result.
+没有匹配基线时，不得声称效果有所提升。只在训练集上得到的性能不能当作最终结果。

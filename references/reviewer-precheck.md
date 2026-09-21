@@ -1,12 +1,12 @@
-# Modeling-lead reviewer precheck
+# 建模手交付前预审
 
-Use this before the selected model is handed to coding or writing. It is a planning lens, not an official scoring sheet. Public descriptions of the Chinese graduate mathematical-modeling contest emphasize reasonable assumptions, modeling creativity, correct results, and clear presentation; current official documents always control.
+在模型交给编程手或论文手之前使用本预审。它是工作检查框架，不是官方评分表。中国研究生数学建模竞赛的公开说明通常强调假设合理、建模有创造性、结果正确、表达清楚；如与当届官方文件不一致，以官方文件为准。
 
-## Four qualitative checks
+## 四项定性检查
 
-- **Reasonable assumptions:** Are all material assumptions visible, necessary, consistent with supplied information, and accompanied by a test or limitation?
-- **Modeling creativity:** Has the applicable domain-standard model been identified and assumption-checked? Is there a task-specific mechanism beyond that baseline, with a stated problem it solves and evidence that could validate it? Is novelty concentrated rather than manufactured per subproblem?
-- **Correct results:** Are units, domains, constraints, limiting cases, targeted data treatments, leakage controls, and task-appropriate validation checks specified before implementation?
-- **Clear presentation:** Can a reader follow the path from problem evidence to assumptions, equations, algorithm, verified quantitative results, and conclusion without relying on an algorithm label? Does every main subproblem have a decisive number suitable for the abstract?
+- **假设合理**：所有重要假设是否明确可见、确有必要、与题目信息一致，并配有检验方法或局限说明？
+- **建模有创造性**：是否已经识别适用的领域标准模型并审查其假设？在基线之外，是否存在针对本题的具体机制，说明它解决什么问题，又有什么证据能够验证？创新是否集中，而不是每个子问题各造一个？
+- **结果正确**：实现前是否已经明确单位、取值域、约束、极限情形、针对性数据处理、防泄漏措施，以及与题型匹配的验证方法？
+- **表达清楚**：读者能否从题目证据一路跟到假设、方程、算法、已验证的量化结果和结论，而不需要依赖算法名称猜测？每个主要子问题是否都有适合写入摘要的关键数值？
 
-If any item fails, write a repair action and return to the relevant artifact. Never turn these checks into invented point weights or claim that passing them predicts a prize.
+任何一项不通过，都要写出修复动作，并返回相应记录修改。不得给这些检查虚构分值或权重，也不能声称通过检查就能预测获奖。

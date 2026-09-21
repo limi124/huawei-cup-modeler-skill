@@ -1,39 +1,39 @@
-# Method decision record — <subproblem>
+# 方法决策记录：<子问题>
 
-## Problem contract
+## 问题约定
 
-- Task type:
-- Target output:
-- Data available and missing:
-- Objective, constraints, and non-negotiable requirements:
-- Assumptions owned by the team:
-- Upstream inputs and downstream consumer:
+- 任务类型：
+- 目标输出：
+- 已有数据与缺失信息：
+- 目标、约束和不可妥协的要求：
+- 由本队承担责任的假设：
+- 上游输入及下游使用者：
 
-## Data diagnosis and treatment
+## 数据诊断与处理
 
-| Observed data issue | Why it matters | Treatment and parameter basis | Leakage control | Before/after or impact evidence |
+| 发现的数据问题 | 为什么会影响模型 | 处理方法及参数依据 | 防止数据泄漏的措施 | 处理前后或影响证据 |
 | --- | --- | --- | --- | --- |
 |  |  |  |  |  |
 
-## Candidate comparison
+## 候选路线比较
 
-| Route | Structural fit | Data / compute fit | Validation plan | Main risk | Decision |
+| 路线 | 结构匹配度 | 数据与算力匹配度 | 验证方案 | 主要风险 | 决策 |
 | --- | --- | --- | --- | --- | --- |
-| Domain-standard or other interpretable baseline |  |  |  |  |  |
-| Primary |  |  |  |  |  |
-| Conditional fallback |  |  |  |  |  |
+| 领域标准模型或其他可解释基线 |  |  |  |  |  |
+| 主路线 |  |  |  |  |  |
+| 触发式备选路线 |  |  |  |  |  |
 
-## Chosen route
+## 最终路线
 
-- Human decision maker:
-- Choice and rationale:
-- Trigger for fallback or revision:
-- Date and version:
+- 决策人：
+- 选择及理由：
+- 启用备选或重新选模的条件：
+- 日期与版本：
 
-## Implementation contract
+## 实现约定
 
-- Symbols, domains, units, objective, and constraints:
-- Input transformations and parameters:
-- Required outputs and acceptance checks:
-- Result locations to cite in the paper:
-- Decisive quantitative result expected for the abstract:
+- 符号、取值域、单位、目标函数和约束：
+- 输入变换及参数：
+- 必须产出的结果和验收检查：
+- 论文引用结果所在位置：
+- 摘要需要呈现的决定性量化结果：

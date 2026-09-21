@@ -1,82 +1,82 @@
 ---
 name: huawei-cup-modeler
-description: "Use when acting as the modeling lead for a Chinese mathematical-modeling contest: compare problem choices, frame a task, turn literature into traceable model candidates, register assumptions, articulate and test an innovation claim, choose a baseline and validation plan, or hand an implementable model to teammates. Do not use solely to typeset or polish a finished paper."
+description: "在中国数学建模竞赛中担任建模手时使用：比较选题、拆解任务、把文献转化为可追溯的候选模型、登记假设、提出并检验创新点、选择基线与验证方案，或向队友交付可实现的模型。若任务只是排版或润色已经完成的论文，不使用本 skill。"
 ---
 
-# Huawei Cup Modeler
+# 华为杯建模手
 
-Help the team reach a model it can explain, implement, validate, and defend. The human modeling lead owns the choice of method, the meaning of assumptions, and the claim of novelty. Treat the skill as decision support, never as a source of unverified formulas, sources, results, or contest-policy claims.
+帮助团队得到一套讲得清、做得出、验得过、答得住的模型。方法选择、假设含义和创新主张最终由人类建模手负责。本 skill 只提供决策支持，不能充当未经核实的公式、文献、结果或竞赛规则来源。
 
-## Route the task
+## 判断当前任务
 
-If the team must choose among multiple problems, read [references/problem-selection.md](references/problem-selection.md) and create a comparison from [assets/problem-selection-matrix.md](assets/problem-selection-matrix.md). Use it to expose trade-offs; do not let a weighted total make the choice or choose a problem solely because a familiar algorithm or an SCI Q1/Q2 paper is available. The human team makes the final topic choice.
+如果团队需要在多道题之间选择，先读[竞赛选题规范](references/problem-selection.md)，再使用[选题比较矩阵](assets/problem-selection-matrix.md)整理取舍。矩阵用于暴露风险，不能让加权总分替团队做决定，也不能只因为熟悉某种算法或找到一篇 SCI 一区、二区论文就选题。最终选题由团队成员决定。
 
-## Build the solution architecture before choosing algorithms
+## 先搭整体架构，再选算法
 
-Read the official problem statement, supplied data, template, and any current contest rules before making a route recommendation. For each subproblem, state:
+提出路线前，先完整阅读官方赛题、附件数据、论文模板和当届竞赛规则。对每个子问题说明：
 
-- its task type: mechanism derivation, parameter estimation, prediction or classification, optimization or scheduling, evaluation or ranking, reconstruction, or another justified type;
-- the decision, prediction, explanation, or evaluation target;
-- available observations, time and spatial scales, and data limitations;
-- objective(s), constraints, outputs, and success criteria;
-- which quantities are directly observed, estimated, or assumed.
+- 任务类型，例如机理推导、参数估计、预测或分类、优化或调度、评价或排序、重构，或其他有依据的类型；
+- 需要作出的决策、预测、解释或评价；
+- 可用观测、时间与空间尺度，以及数据局限；
+- 目标、约束、输出和成功标准；
+- 哪些量可以直接观测，哪些需要估计，哪些来自假设。
 
-Map the interfaces among subproblems using [assets/solution-architecture.md](assets/solution-architecture.md). Reuse earlier parameters, features, states, or fitted relationships when the problem genuinely connects them; do not force an artificial final synthesis when the subproblems are independent.
+使用[整体建模架构](assets/solution-architecture.md)梳理子问题之间的接口。题目确实存在前后依赖时，应复用前面得到的参数、特征、状态或拟合关系；子问题彼此独立时，不要为了形式完整而强行在最后一问综合。
 
-Do not pick a problem just because a familiar method or a high-ranked paper exists. Prefer a route the team can motivate from the problem, compute with supplied resources, and evaluate against an honest baseline.
+不能因为存在熟悉的方法或高分区论文就直接选题。优先选择能够从题意推出、能用现有资源完成计算，并能以可靠基线检验的路线。
 
-## Prefer an applicable domain-standard model
+## 优先寻找适用的领域标准模型
 
-Before selecting a generic statistical or machine-learning route, identify the field's accepted mechanism model, governing equation, empirical law, benchmark, or decision theory. Examples include Bianchi models for WLAN contention, Kaya/LMDI decompositions for emissions, EESM for link abstraction, Steinmetz equations for magnetic loss, and established traffic-flow relations.
+在选择通用统计模型或机器学习模型之前，先查本领域公认的机理模型、控制方程、经验定律、基准或决策理论。例如 WLAN 竞争接入中的 Bianchi 模型、碳排放研究中的 Kaya/LMDI 分解、链路抽象中的 EESM、磁芯损耗中的 Steinmetz 方程，以及成熟的交通流关系。
 
-Audit the standard model's assumptions against the task. Use this priority order:
+逐项核对标准模型的假设是否符合题目，并按以下顺序处理：
 
-1. If its assumptions substantially hold, use the domain-standard model as the backbone and calibrate or extend it only where needed.
-2. If it is only partly applicable, retain it as the professional baseline or interpretable component and state the exact failure mode that motivates a data-driven correction.
-3. If no credible domain model exists, choose the simplest defensible model that matches the mathematical structure, data, constraints, and downstream use.
+1. 假设基本成立时，用领域标准模型搭骨架，只在确有需要的地方标定或扩展。
+2. 仅部分适用时，把它保留为专业基线或可解释组件，写明具体失效点，再据此引入数据驱动修正。
+3. 没有可信的领域模型时，再选择与数学结构、数据、约束和下游用途匹配的最简单可靠模型。
 
-Do not use a famous domain model merely as decoration. Record its source, assumptions, parameter meanings, applicability, and retained or rejected parts in [assets/model-card.md](assets/model-card.md).
+不能只为显得专业而摆上一个知名领域模型。使用[模型卡](assets/model-card.md)记录它的来源、假设、参数含义、适用性，以及最终保留或拒绝的部分。
 
-## Treat data preparation as modeling
+## 把数据处理当作建模步骤
 
-Diagnose the supplied data before choosing the final route. Apply only treatments that answer an observed issue such as missingness, class imbalance, time or spatial misalignment, noise, outliers, inconsistent units, sampling bias, or domain shift. For each material treatment, record the diagnosed problem, why it matters to the model, the chosen method and parameter basis, leakage controls, and before/after evidence in [assets/method-decision-record.md](assets/method-decision-record.md).
+确定最终路线前，先诊断题目数据。只处理确实存在的问题，例如缺失、类别不平衡、时间或空间错位、噪声、异常值、单位不一致、抽样偏差或领域漂移。每项重要处理都要在[方法决策记录](assets/method-decision-record.md)中写明：发现了什么问题、为什么会影响模型、采用什么方法及参数依据、如何防止数据泄漏，以及处理前后的证据。
 
-Fit transformations, resampling, feature selection, and normalization on training data only when a holdout exists. Do not present a generic preprocessing pipeline as substantive modeling, and do not remove inconvenient observations without a reproducible rule and impact check.
+存在留出集时，数据变换、重采样、特征选择和归一化只能在训练集上拟合。不能把通用预处理流水线包装成实质性建模，也不能在缺少可复现规则和影响检查的情况下删除不利于预期结论的观测。
 
-## Make assumptions and novelty testable
+## 让假设与创新都能检验
 
-Before committing to a primary route, read [references/assumptions-and-innovation.md](references/assumptions-and-innovation.md). Record every material assumption using [assets/assumption-register.md](assets/assumption-register.md), including its reason, likely direction of bias, and test or limitation.
+确定主路线前，先读[模型假设与创新点](references/assumptions-and-innovation.md)。使用[模型假设登记表](assets/assumption-register.md)记录每项重要假设，包括采用理由、可能造成的偏差方向，以及检验方式或局限。
 
-Express the proposed innovation with [assets/innovation-claim.md](assets/innovation-claim.md): identify the baseline's concrete shortcoming, the smallest justified change, the mechanism by which it should help, and the evidence that could refute the claim. Do not call method stacking, parameter tuning, or a renamed classical method an innovation without a task-specific mechanism and comparison.
+使用[创新点论证](assets/innovation-claim.md)表达创新：指出基线的具体不足、最小且有依据的改动、它应当奏效的机制，以及能够推翻该主张的证据。没有针对本题的作用机制和对比时，方法堆叠、参数调优或给经典方法换名都不能称为创新。
 
-Across the complete solution, aim for one central, testable contribution and at most one supporting contribution unless the problem genuinely requires more. Let routine subproblems use established methods. Do not manufacture a separate "innovation" for every subproblem; concentrate evidence on the changes that carry the paper's main claim.
+除非题目确实需要更多，全文应集中打造一个可检验的核心贡献，至多再加一个辅助贡献。常规子问题可以直接使用成熟方法。不要给每一问生造一个“创新”，应把证据集中在支撑论文主张的关键改动上。
 
-## Literature-to-model work
+## 把文献转化为可用模型
 
-When finding or evaluating research papers, read [references/literature-to-model.md](references/literature-to-model.md). Build one model card for every candidate that could affect the final solution, using [assets/model-card.md](assets/model-card.md).
+查找或评估论文时，先读[从文献走到模型](references/literature-to-model.md)。凡是可能影响最终方案的候选模型，都要填写一份[模型卡](assets/model-card.md)。
 
-Use the paper's problem structure, mechanism, assumptions, and validation design—not its conclusion—as transferable evidence. A journal's SCI quartile is a weak secondary signal; structural fit, accessible data, reproducibility, and explainability decide whether a method is usable. Cite primary papers or official sources. If a formula has no traceable source, derive it from stated assumptions or omit it.
+可迁移的是论文的问题结构、作用机理、假设和验证设计，不是它的结论。SCI 分区只能作为较弱的辅助信号；结构匹配、数据可得、结果可复现和方法可解释，才决定模型能否用于本题。优先引用原始论文或官方来源。公式如果找不到可追溯来源，就从明示假设重新推导，否则删除。
 
-## Choose a route deliberately
+## 有意识地选择路线
 
-For each subproblem, compare at most three routes: the applicable domain-standard or other interpretable baseline, a primary candidate, and an optional fallback triggered by a stated risk. Explain the trade-off in a decision record based on [assets/method-decision-record.md](assets/method-decision-record.md). Do not silently choose on the team's behalf when the choice materially changes assumptions, objectives, or interpretation.
+每个子问题最多比较三条路线：适用的领域标准模型或其他可解释基线、主候选路线，以及由明确风险触发的可选备选路线。使用[方法决策记录](assets/method-decision-record.md)说明取舍。如果某项选择会实质改变假设、目标或结果解释，不能替团队默默决定。
 
-Do not require two-model accuracy comparisons for every subproblem. Instead, require evidence for every consequential choice: compare competing predictive models when selection is uncertain; compare an optimization result with a feasible baseline on objective value, feasibility, stability, and runtime; test a mechanism model with units, limiting cases, simulation, or observations; test an evaluation model with weight sensitivity and ranking stability. A routine transformation or intermediate calculation needs a correctness and impact check, not a decorative model tournament.
+不要求每个子问题都进行两种模型的精度对比，但每个重要选择都必须有证据。预测模型选型不明确时，要比较有实质差异的候选；优化结果要与可行基线比较目标值、可行性、稳定性和耗时；机理模型要检查单位、极限情形，并与仿真或观测核对；评价模型要检验权重灵敏度和排序稳定性。常规变换或中间计算只需做正确性与影响检查，不需要组织装饰性的模型竞赛。
 
-Before substantial implementation, lock down the primary route's variables, notation, objective, constraints, data transformations, parameter-estimation method, and validation plan. Read [references/validation-and-handoff.md](references/validation-and-handoff.md) when preparing this specification or reviewing results.
+开始大规模实现前，先确定主路线的变量、符号、目标、约束、数据变换、参数估计方法和验证方案。编写模型说明或审查结果时，读取[验证与团队交接](references/validation-and-handoff.md)。
 
-## Derive, review, then hand off
+## 先推导，再审查，最后交接
 
-Create a derivation record from [assets/model-derivation-record.md](assets/model-derivation-record.md) for the selected route. It must show the starting assumptions or principles, each nontrivial transformation, variable domains and units, and the link from equations to an algorithm. A citation may support a method choice, but it does not replace an adaptation-specific derivation.
+为选定路线填写[模型推导记录](assets/model-derivation-record.md)。记录必须展示起始假设或原理、每一步非平凡变换、变量取值域与单位，以及从方程到算法的对应关系。引用文献可以支持选模，但不能代替针对本题的推导。
 
-After verified runs, maintain [assets/result-ledger.md](assets/result-ledger.md). Give every main subproblem one or two decisive quantitative results appropriate to its type: error or agreement for mechanism models, holdout metrics for prediction, objective improvement and feasibility for optimization, or rank and sensitivity stability for evaluation. Record the comparison value, uncertainty or stability evidence, and reproducible result path. Do not fill the abstract with uninformative decimals or report a number that cannot be traced to an output.
+得到经过验证的运行结果后，维护[量化结果台账](assets/result-ledger.md)。每个主要子问题保留一至两个与题型匹配的决定性数值：机理模型报告误差或吻合度，预测模型报告留出集指标，优化模型报告目标改善和可行性，评价模型报告关键排序和灵敏度稳定性。同时记录比较值、不确定性或稳定性证据，以及可复现结果路径。不要在摘要中堆砌没有判别力的小数，也不能报告无法追溯到输出文件的数字。
 
-Before handing off the final model, read [references/reviewer-precheck.md](references/reviewer-precheck.md) and complete [assets/modeler-review.md](assets/modeler-review.md). This is a qualitative precheck, not a fabricated official score or a promise of an award.
+最终模型交接前，阅读[建模手交付前预审](references/reviewer-precheck.md)，并完成[建模手检查表](assets/modeler-review.md)。这是定性预审，不是虚构的官方评分，也不代表获奖承诺。
 
-## Evidence, integrity, and handoff
+## 证据、诚信与交接
 
-Every conclusion in a model specification must be linked to one of: supplied data, a cited source, a documented team assumption, or a reproducible computation. Never invent data, parameter values, literature, validation results, or claims of improvement.
+模型说明中的每项结论，都必须关联到题目数据、已引用来源、团队明确记录的假设，或可复现计算之一。不得编造数据、参数值、文献、验证结果或效果提升。
 
-Maintain a traceability record from the beginning. Read [references/contest-traceability.md](references/contest-traceability.md) whenever external literature, code generation, or contest compliance is in scope.
+从一开始就维护可追溯记录。任务涉及外部文献、代码生成或竞赛合规时，读取[竞赛过程可追溯性](references/contest-traceability.md)。
 
-Hand the coding teammate a model specification with equations, variable domains and units, data schema, algorithm options, expected outputs, edge cases, and acceptance checks. Hand the writing teammate the solution architecture, decision record, model cards, result ledger, actual result locations, limitations, and citation keys. The abstract should state the method and decisive verified number for every main subproblem, including improvement over a baseline or the appropriate validation result when meaningful. Do not turn tentative ideas into paper claims until a run and its validation support them.
+向编程手交付包含方程、变量取值域与单位、数据结构、算法选项、预期输出、边界情形和验收检查的模型说明。向论文手交付整体架构、决策记录、模型卡、量化结果台账、真实结果位置、局限和引用键。摘要应逐个主要子问题写明方法和经过验证的关键数值；有意义时，再写相对基线的提升或相应验证结果。在运行与验证提供证据之前，暂定想法不能写成论文结论。

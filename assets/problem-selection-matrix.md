@@ -1,21 +1,21 @@
-# Problem selection matrix
+# 选题比较矩阵
 
-| Criterion | Problem A | Problem B | Problem C |
+| 判断标准 | A 题 | B 题 | C 题 |
 | --- | --- | --- | --- |
-| Real target and mechanism understood |  |  |  |
-| Data, units, and constraints usable |  |  |  |
-| Honest baseline available |  |  |  |
-| Specific enhancement opportunity |  |  |  |
-| Validation route available |  |  |  |
-| Team capability and time risk |  |  |  |
+| 已理解真实目标和作用机理 |  |  |  |
+| 数据、单位和约束可用 |  |  |  |
+| 存在可靠基线 |  |  |  |
+| 存在具体的改进空间 |  |  |  |
+| 存在可行的验证路线 |  |  |  |
+| 团队能力和时间风险可控 |  |  |  |
 
-Use `green`, `yellow`, or `red` plus a short evidence note in each cell. Do not score an unknown as green.
+每个单元格填写 `绿色`、`黄色` 或 `红色`，并附一条简短证据。信息不明时不得标为绿色。
 
-## Decision
+## 决策
 
-- Preferred problem:
-- One-sentence model opportunity:
-- Largest unresolved risk:
-- First de-risking experiment:
-- Switch condition:
-- Human decision and date:
+- 首选题目：
+- 一句话说明建模机会：
+- 最大未决风险：
+- 第一个降风险实验：
+- 换题条件：
+- 决策人及日期：

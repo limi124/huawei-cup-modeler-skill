@@ -1,20 +1,20 @@
-# Problem selection
+# 竞赛选题
 
-Use this reference only when more than one contest problem is under consideration. The aim is to avoid a tempting but unfinishable route, not to predict an award.
+只有在团队需要比较多道题时才使用本规范。它的作用是避开看似诱人却无法完成的路线，不是预测奖项。
 
-## Compare the right risks
+## 比较真正影响成败的风险
 
-Assess each candidate problem through the following questions:
+逐题回答以下问题：
 
-1. Can the team state the real decision, mechanism, or target without inventing context?
-2. Are the supplied data, units, constraints, and expected outputs sufficient for a defensible minimum model?
-3. Is there a transparent baseline that can be implemented and checked early?
-4. Is there a specific, task-driven limitation that a justified enhancement could address?
-5. Can the central claim be validated with available data, invariants, scenarios, or sensitivity tests?
-6. Does the team's domain knowledge and time budget cover the highest-risk component?
+1. 团队能否在不虚构背景的前提下，说清真正的决策、机理或目标？
+2. 题目提供的数据、单位、约束和预期输出，是否足以支撑一个最低可交付模型？
+3. 是否存在能够尽早实现和检验的透明基线？
+4. 是否存在由题目本身驱动、且可以合理改进的具体不足？
+5. 核心主张能否用现有数据、不变量、情景分析或灵敏度检验进行验证？
+6. 团队的领域知识和时间预算，能否覆盖风险最高的环节？
 
-Mark a criterion green, yellow, or red and explain the evidence. A red item on data availability, validation, or feasibility normally outweighs several green items. A topic with fewer fashionable methods but a strong mechanism and testable evidence is often the safer choice.
+每项标准标为绿色、黄色或红色，并写明证据。数据可得性、验证条件或可行性出现一项红色，通常就足以压过多项绿色。相比算法看起来时髦但无法验证的题目，机理扎实、证据可检验的题目往往更稳妥。
 
-## Make the choice explicit
+## 把选题决定写清楚
 
-For the preferred problem, state the one-sentence model opportunity, the largest uncertainty, the first experiment that would de-risk it, and the condition under which the team would switch topics. This prevents a selection made from intuition alone from becoming an unexamined commitment.
+对首选题目，要写出一句话建模机会、最大不确定性、第一个降风险实验，以及触发换题的条件。这样可以避免团队凭直觉选题后一路投入，却从未重新审视最初判断。

@@ -1,21 +1,21 @@
-# Solution architecture
+# 整体建模架构
 
-## Overall thread
+## 全文主线
 
-- Central scientific or decision question:
-- Domain-standard model family to investigate first:
-- Central testable contribution:
-- Optional supporting contribution:
-- Why the subproblems form one solution rather than separate mini-papers:
+- 核心科学问题或决策问题：
+- 优先调查的领域标准模型：
+- 核心可检验贡献：
+- 可选的辅助贡献：
+- 各子问题为什么构成一套完整方案，而不是几篇互不相干的小论文：
 
-## Subproblem interfaces
+## 子问题接口
 
-| Subproblem | Task type | Inputs and evidence | Domain-standard backbone or reason none applies | Output contract | Downstream consumer | Required validation |
+| 子问题 | 任务类型 | 输入与证据 | 领域标准骨架，或无适用模型的理由 | 输出约定 | 下游用途 | 必要验证 |
 | --- | --- | --- | --- | --- | --- | --- |
-| Q1 |  |  |  |  |  |  |
+| 问题一 |  |  |  |  |  |  |
 
-## Coherence check
+## 连贯性检查
 
-- Parameters, features, states, or relationships reused downstream:
-- Subproblems that are genuinely independent and should not be forced together:
-- One technical-route diagram to communicate the complete chain:
+- 下游会复用的参数、特征、状态或拟合关系：
+- 确实相互独立、不应强行串联的子问题：
+- 用一张技术路线图表达完整链条：

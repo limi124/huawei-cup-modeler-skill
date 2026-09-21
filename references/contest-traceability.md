@@ -1,17 +1,17 @@
-# Contest traceability
+# 竞赛过程可追溯性
 
-Contest rules, templates, file requirements, and AI policies change by year. The current official documents supplied by the team take priority over this skill and over prior contest knowledge. Before the contest, create a short compliance note with the official source URL or file, version or date, and the team member who checked it.
+竞赛规则、论文模板、文件要求和 AI 使用政策每年都可能变化。团队取得的当届官方文件优先于本 skill 和往届经验。赛前应建立一份简短的合规记录，注明官方网址或文件、版本或日期，以及负责核对的队员。
 
-## Keep evidence while working
+## 边做边留证据
 
-Maintain records as work happens:
+建模过程中持续保存：
 
-- a source table with citation key, DOI or authoritative URL, access date, and the specific claim or formula supported;
-- model cards and the final method-decision record;
-- code commit or file version, input-data fingerprint, configuration, run command, and result location.
+- 文献来源表，包括引用键、DOI 或权威网址、访问日期，以及该来源具体支持的结论或公式；
+- 模型卡和最终的方法决策记录；
+- 代码提交或文件版本、输入数据指纹、运行配置、运行命令和结果位置。
 
-When official rules require AI disclosure, follow their current wording and format rather than assuming that a prior year's rule applies.
+如果当届规则要求披露 AI 使用情况，应严格采用当届规定的措辞和格式，不能沿用往年做法想当然处理。
 
-## Red lines
+## 红线
 
-Do not fabricate sources, data, experiments, or derivations. Do not represent an AI suggestion as a verified finding. Do not copy prose, figures, tables, or equations from a source without citation and a legitimate reason to reuse it. If a requirement cannot be verified, flag it for the team instead of guessing.
+不得捏造文献、数据、实验或推导。AI 给出的建议不能冒充经过验证的结论。未经引用且没有正当复用理由，不得照搬他人的文字、图、表或公式。遇到无法核实的要求，要明确标记并交由团队确认，不能靠猜测补齐。
