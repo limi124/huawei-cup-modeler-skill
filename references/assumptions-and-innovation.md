@@ -17,6 +17,8 @@ Start with a baseline that the team can explain. Then describe:
 
 Prefer a narrow, evidenced adaptation to a long list of unrelated methods. A candidate is not innovative merely because it is complex, uses a new algorithm name, or combines multiple common methods. If the enhancement cannot be distinguished from the baseline in a test, frame it as an exploratory alternative rather than the contribution.
 
+Budget novelty across the whole paper. Prefer one central contribution that carries the solution and, when justified, one supporting contribution that improves robustness, real-time use, transfer, or interpretability. Routine subproblems may use standard methods. Do not create independent novelty claims merely to make every subproblem look innovative.
+
 ## Write the claim at the right strength
 
 Use "we introduce" only for the team's documented task-specific construction. Use "we adapt" for a sourced method whose inputs, constraints, or calibration are changed. Use "we compare" when no superiority result exists yet. The paper must not claim improved accuracy, robustness, or applicability until the planned evidence is available.

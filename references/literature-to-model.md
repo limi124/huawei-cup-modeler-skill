@@ -2,7 +2,9 @@
 
 ## What to search for
 
-Search from the problem's mechanism and mathematical structure, not from a contest-title phrase. Combine the object or mechanism with the target and the decisive constraint. Examples include `uncertain demand + multi-objective routing + robust optimization` or `diffusion process + inverse parameter estimation + sparse observations`.
+Search first for the field's accepted backbone: governing equations, empirical laws, canonical mechanism models, official engineering methods, and widely used benchmarks. Then search from the problem's mechanism and mathematical structure, not from a contest-title phrase. Combine the object or mechanism with the target and the decisive constraint. Examples include `WLAN contention + Bianchi hidden terminal extension`, `magnetic core loss + temperature-corrected Steinmetz`, or `uncertain demand + multi-objective routing + robust optimization`.
+
+The aim is not to decorate the paper with a famous model. Determine whether a domain-standard model supplies meaningful variables, parameters, constraints, and an interpretable baseline for the current task. If its assumptions fail, document the failure and decide whether to adapt it, retain it only as a benchmark, or reject it.
 
 Collect only the sources needed to make a decision. For a serious candidate, an efficient set is usually one source establishing the method, one recent application with a similar structure, and one source that supports validation or a required domain assumption. A large bibliography is not evidence by itself.
 
@@ -10,11 +12,12 @@ Collect only the sources needed to make a decision. For a serious candidate, an 
 
 For each candidate, record its source, mapping, requirements, and limits in a model card. Assess these in order:
 
-1. **Structural fit** — Do the paper's target, variables, constraints, and time or spatial scales map to the task?
-2. **Assumption fit** — Are its independence, stationarity, linearity, equilibrium, or observability assumptions defensible here?
-3. **Data and computation fit** — Can the team obtain every needed input and run the method within the time budget?
-4. **Evidence fit** — Can the proposed output be checked with a holdout, benchmark, physical constraint, counterfactual, sensitivity test, or comparison?
-5. **Communication fit** — Can the team derive the essential equations and explain what each result means?
+1. **Domain standing and role** — Is it an accepted backbone, an empirical standard, a benchmark, or merely one recent application? What professional meaning would it add?
+2. **Structural fit** — Do the paper's target, variables, constraints, and time or spatial scales map to the task?
+3. **Assumption fit** — Are its independence, stationarity, linearity, equilibrium, or observability assumptions defensible here?
+4. **Data and computation fit** — Can the team obtain every needed input and run the method within the time budget?
+5. **Evidence fit** — Can the proposed output be checked with a holdout, benchmark, physical constraint, counterfactual, sensitivity test, or comparison?
+6. **Communication fit** — Can the team derive the essential equations and explain what each result means?
 
 SCI Q1/Q2 status may help identify established research venues, but it cannot compensate for poor structural fit or an inaccessible method. Do not treat it as a quality certificate for a particular use.
 

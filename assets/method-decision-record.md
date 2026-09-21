@@ -2,16 +2,24 @@
 
 ## Problem contract
 
+- Task type:
 - Target output:
 - Data available and missing:
 - Objective, constraints, and non-negotiable requirements:
 - Assumptions owned by the team:
+- Upstream inputs and downstream consumer:
+
+## Data diagnosis and treatment
+
+| Observed data issue | Why it matters | Treatment and parameter basis | Leakage control | Before/after or impact evidence |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
 
 ## Candidate comparison
 
 | Route | Structural fit | Data / compute fit | Validation plan | Main risk | Decision |
 | --- | --- | --- | --- | --- | --- |
-| Baseline |  |  |  |  |  |
+| Domain-standard or other interpretable baseline |  |  |  |  |  |
 | Primary |  |  |  |  |  |
 | Conditional fallback |  |  |  |  |  |
 
@@ -28,3 +36,4 @@
 - Input transformations and parameters:
 - Required outputs and acceptance checks:
 - Result locations to cite in the paper:
+- Decisive quantitative result expected for the abstract:

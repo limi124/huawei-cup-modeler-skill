@@ -5,13 +5,16 @@
 - Citation key / DOI / authoritative URL:
 - What task does the source solve?
 - Why this candidate is relevant to the current subproblem:
+- Domain role: `accepted backbone` / `empirical standard` / `benchmark` / `recent alternative`
 
 ## Mathematical mapping
 
 - Source target, variables, objective, and constraints:
 - Current-task equivalents:
+- Applicability verdict and evidence:
 - Assumptions retained:
 - Assumptions changed or rejected, with reasons:
+- Role if assumptions only partly hold: `adapted backbone` / `professional baseline` / `rejected`
 
 ## Feasibility
 
